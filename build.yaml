@@ -20,9 +20,4 @@
 ---
 include:
   - board: bt60_v1_hs
-include:
-  - board: bt60_v1_hs
-include:
-  - board: bt60_v1_hs
-include:
-  - board: bt60_v1_hs
+
