@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: my_keyboard
+  - board: nice_nano_v2
     shield: my_keyboard
