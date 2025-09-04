@@ -20,4 +20,4 @@
 ---
 include:
   - board: naked60
-    shield: bt60_v1_hs
+    shield: bdn9_rev2
