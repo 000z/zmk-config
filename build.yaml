@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: naked60
-    shield: bdn9_rev2
+  - board: my_keyboard
+    shield: my_keyboard
