@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_BAT43
-    def_bool $(shields_list_contains,bat43)
+    def_bool $(shields_list_contains,my_keyboard)
