@@ -1,8 +1,8 @@
 file_format: "1"
-id: bat43
+id: my_keyboard  # 确保这与你的 shield 名称一致
 name: my_keyboard
 type: shield
 url: https://kbd.dailycraft.jp/bat43/
-requires: [nice_nano_v2]
+requires: [nice_nano_v2]  # 修改为 nice_nano_v2
 features:
   - keys
