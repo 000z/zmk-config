@@ -3,6 +3,6 @@ id: bat43
 name: my_keyboard
 type: shield
 url: https://kbd.dailycraft.jp/bat43/
-requires: [pro_micro]
+requires: [nice_nano_v2]
 features:
   - keys
