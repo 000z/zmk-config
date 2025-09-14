@@ -4,10 +4,21 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        label = "Default";
 
         default_layer {
-            bindings = <&kp A>;
+            bindings = <
+                &kp NUM_1   &kp NUM_2   &kp NUM_3
+                &kp NUM_4   &kp NUM_5   &kp NUM_6
+                &kp NUM_7   &kp NUM_8   &kp NUM_9
+            >;
+        };
+
+        function_layer {
+            bindings = <
+                &kp F1      &kp F2      &kp F3
+                &kp F4      &kp F5      &kp F6
+                &kp F7      &kp F8      &kp F9
+            >;
         };
     };
 };
