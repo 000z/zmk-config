@@ -17,10 +17,9 @@
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
     label = "KSCAN";
+    row-gpios = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    col-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
 
-    // 修改：将ACTIVE_HIGH 改为 ACTIVE_LOW
-    row-gpios = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // 注意这里是ACTIVE_LOW
-    col-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // 注意这里是ACTIVE_LOW
 };
 
 
