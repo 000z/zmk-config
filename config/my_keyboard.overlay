@@ -8,7 +8,7 @@
 
     kscan: kscan_gpio_matrix {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+        diode-direction = "row2col";
         wakeup-source;
 
         // 行GPIO配置 - 使用您成功的3×3配置中的模式
