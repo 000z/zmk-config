@@ -15,7 +15,7 @@
         row-gpios = <&gpio0 11 (GPIO_PULL_DOWN)>
                    ;
         // 列GPIO配置 - 扩展为10列，使用您成功的模式
-        col-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH)>
+        col-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW)>
                    
                     ;
     };
