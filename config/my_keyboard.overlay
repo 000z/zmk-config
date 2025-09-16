@@ -22,10 +22,10 @@
         // 列线配置为输入，并启用上拉电阻
         // 当按键未按下时，上拉电阻将列线保持在高电平
         // 当按键按下时，当前被扫描的行线为高电平，二极管导通，将对应的列线拉低
-        col-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-                  , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-                  , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-                  , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+        col-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH )>
+                  , <&gpio0 22 (GPIO_ACTIVE_HIGH )>
+                  , <&gpio1 15 (GPIO_ACTIVE_HIGH )>
+                  , <&gpio1 4  (GPIO_ACTIVE_HIGH )>
                   ;
                     
     };
