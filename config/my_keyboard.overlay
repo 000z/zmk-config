@@ -8,7 +8,7 @@
 
     kscan: kscan_gpio_matrix {
         compatible = "zmk,kscan-gpio-direct";
-        diode-direction = "col2row";
+       // diode-direction = "col2row";
         toggle-mode;
 
                 input-gpios
