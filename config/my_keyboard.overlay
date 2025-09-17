@@ -11,19 +11,16 @@
 
 
         // 行GPIO配置 - 使用您成功的3×3配置中的模式
-        input-gpios	 = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        row-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                   , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                   , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                  , <&gpio0 29 (GPIO_ACTIVE_LOW  | GPIO_PULL_DOWN)>
-                  , <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
-                  , <&gpio0 10 (GPIO_ACTIVE_LOW  | GPIO_PULL_UP)>
+                  , <&gpio0 29 (GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN)>
+
                   ;
                    
         // 列GPIO配置 - 扩展为10列，使用您成功的模式
-        output-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH)>
-                  , <&gpio0 22 (GPIO_ACTIVE_LOW)>
+        col-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH)>
                   , <&gpio1 15 (GPIO_ACTIVE_HIGH)>
-                  , <&gpio1 4 (GPIO_ACTIVE_LOW)>
                   ;
                     
     };
