@@ -7,15 +7,14 @@
     };
 
     kscan: kscan_gpio_matrix {
-        compatible = "zmk,kscan-gpio-demux";
+        compatible = "zmk,kscan-gpio-matrix";
 
 
         // 行GPIO配置 - 使用您成功的3×3配置中的模式
         row-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                   , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                   , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                  , <&gpio0 29 (GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN)>
-
+                  , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                   ;
                    
         // 列GPIO配置 - 扩展为10列，使用您成功的模式
