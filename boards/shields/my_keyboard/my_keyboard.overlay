@@ -22,9 +22,9 @@
         wakeup-source;
 
         // 行GPIO配置 - 使用您成功的3×3配置中的模式
-        row-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                  , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-                  , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        row-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH )>
+                  , <&gpio0 20 (GPIO_ACTIVE_HIGH )>
+                  , <&gpio0 17 (GPIO_ACTIVE_HIGH )>
                   ;
                    
         // 列GPIO配置 - 扩展为10列，使用您成功的模式
