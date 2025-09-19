@@ -15,6 +15,7 @@
             label = "Blue LED";
             status = "disabled"; // 禁用蓝色 LED
         };
+    };
 
     physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
         compatible = "zmk,physical-layout";
