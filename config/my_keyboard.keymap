@@ -14,7 +14,7 @@
                 &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp ENTER
                 
                 // 第三行 (Row 2) - 空格键在V和B键之间
-                &kp Z  &kp X  &kp C  &kp V  &kp SPACE  &kp B  &kp N  &kp M  &trans  &trans
+                &kp Z  &kp X  &kp C  &kp V  &trans &kp SPACE  &trans &kp B &kp N  &kp M
     >;
 };
 
