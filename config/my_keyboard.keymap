@@ -13,7 +13,7 @@
                 // 第二行 (Row 1) - 回车键在L键右侧
                 &mt LSHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp ENTER
                 // 第三行 (Row 2) - 空格键在V和B键之间
-                &mt LCTRL Z  &mt LGUI X  &mt LALT C  &mt V  &trans &mt 1 SPACE &trans &kp B &kp N  &kp M
+                &mt LCTRL Z  &mt LGUI X  &mt LALT C  &mt V  &trans &mo 1  &trans &kp B &kp N  &kp M
             >;
         };
         one_layer {
