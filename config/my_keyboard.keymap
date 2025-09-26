@@ -15,13 +15,13 @@
                 &mt LCTRL Z  &kp X  &kp C  &kp V  &trans &mt 1 SPACE &trans &kp B &kp N  &kp M
             >;
         };
-        raise {
+        one_layer {
             bindings = <
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0        
                 // 第二行 (Row 1) - 回车键在L键右侧
-                &mt   &kp   &kp   &kp   &kp   &kp   &kp   &kp   &kp   &kp 
+                //&mt   &kp   &kp   &kp   &kp   &kp   &kp   &kp   &kp   &kp 
                 // 第三行 (Row 2) - 空格键在V和B键之间
-                &mt   &kp   &kp   &kp   &trans &kp SPACE  &trans &kp  &kp   &kp 
+                //&mt   &kp   &kp   &kp   &trans &kp SPACE  &trans &kp  &kp   &kp 
             >;
         };
 
