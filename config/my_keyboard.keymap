@@ -17,7 +17,7 @@
         };
         raise {
             bindings = <
-                &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_10        
+                &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N10        
                 // 第二行 (Row 1) - 回车键在L键右侧
                 &mt   &kp   &kp   &kp   &kp   &kp   &kp   &kp   &kp   &kp 
                 // 第三行 (Row 2) - 空格键在V和B键之间
