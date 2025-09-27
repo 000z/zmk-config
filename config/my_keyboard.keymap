@@ -18,11 +18,9 @@
         };
         one_layer {
             bindings = <
-                &kp ESC &kp UP &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp N0 &kp BSPC      
-                // 第二行 (Row 1) - 回车键在L键右侧
-                &kp LEFT &kp DOWN  &kp RIGHT  &kp N0 &kp N0 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &mkp LCLK
-                // 第三行 (Row 2) - 空格键在V和B键之间
-                &kp N0 &kp  N0 &kp  N0 &kp N0  &trans &kp SPACE  &trans &kp N0 &kp N0 &kp N0
+                &kp ESC &kp UP &trans &trans &trans &trans &trans &trans &trans &kp BSPC      
+                &kp LEFT &kp DOWN  &kp RIGHT  &trans &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &mkp LCLK
+                &trans &trans &trans &trans  &trans &kp SPACE  &trans &trans &trans &trans
             >;
         };
 
