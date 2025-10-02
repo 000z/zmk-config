@@ -25,9 +25,9 @@
         one_layer {
             bindings = <
                 // --------------------------------------------------------------
-                // |  ESC |  UP |     |     |     |     |     |     |     | BSPC|
-                // |  LEFT| DOWN|RIGHT|     |     | M.L | M.D | M.UP| M.R |  CK |
-                // |      |     |     |     |     |     |     |     |     |     |
+                // |  ESC |     |     |     |     |     |     |     |     | BSPC|
+                // | LS(a)|     |     |     |     | M.L | M.D | M.UP| M.R |  CK |
+                // | LC(z)|     |     |     |     |     |     |     |     |     |
                 // --------------------------------------------------------------
 
                 &kp ESC &kp UP &trans &trans &trans &trans &trans &trans &trans &kp BSPC      
