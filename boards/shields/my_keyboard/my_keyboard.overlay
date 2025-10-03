@@ -39,20 +39,4 @@
         >;
     };
 
-    // 最小化的物理布局
-    physical_layout: physical_layout {
-        compatible = "zmk,physical-layout";
-        display-name = "My Keyboard";
-        transform = <&default_transform>;
-        
-        // 只定义一个按键进行测试
-        keys = <&key_pos_0_0>;
-    };
-
-    key_pos_0_0: key_pos_0_0 {
-        compatible = "zmk,key-position";
-        #key-cells = <0>;
-        x = <0>;
-        y = <0>;
-    };
 };
