@@ -43,6 +43,7 @@
     physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "My Keyboard Layout";
+        transform = <&default_transform>;
         
         keys = <
             &key_pos_0_0 &key_pos_0_1 &key_pos_0_2 &key_pos_0_3 &key_pos_0_4 &key_pos_0_5 &key_pos_0_6 &key_pos_0_7 &key_pos_0_8 &key_pos_0_9
