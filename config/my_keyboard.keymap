@@ -24,13 +24,13 @@
         };
         one_layer {
             bindings = <
-                // --------------------------------------------------------------
-                // |  ESC |     |     |     |     |     |     |     |     | BSPC|
-                // | LS(a)|     |     |     |     | M.L | M.D | M.UP| M.R |  CK |
-                // | LC(z)|     |     |     |     |     |     |     |     |     |
-                // --------------------------------------------------------------
+                // ------------------------------------------------------------------
+                // |  ESC | STU  |      |     |     |     |      |  UP  |     | BSPC|
+                // |LSHIFT|      |      |     |     |     | LEFT | DOWNN|RIGHT|  CK |
+                // | CTRL | WIN  |  ALT |     |     |     |      |      |     |     |
+                // ------------------------------------------------------------------
 
-                &kp ESC &kp UP &trans &trans &trans &trans &trans &trans &trans &kp BSPC      
+                &kp ESC &studio_unlock &trans &trans &trans &trans &trans &trans &trans &kp BSPC      
                 &kp LEFT &kp DOWN  &kp RIGHT  &trans &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &mkp LCLK
                 &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans
             >;
@@ -39,8 +39,21 @@
             bindings = <
                 // --------------------------------------------------------------
                 // |   1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0   |
-                // |LSHIFT|     |     |     |     |     |     |     |     |RSHIFT|
-                // |      |     |     |     |     |     |     |     |     |      |
+                // |  LS  |     |     |     |     | M.L | M.D | M.UP| M.R |RSHIFT|
+                // | CTRL | WIN | ALT |     |     |     |     |     |     |      |
+                // --------------------------------------------------------------
+
+                &kp ESC &kp UP &trans &trans &trans &trans &trans &trans &trans &kp BSPC      
+                &kp LEFT &kp DOWN  &kp RIGHT  &trans &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &mkp LCLK
+                &trans &trans &trans &trans  &trans &kp SPACE  &trans &trans &trans &trans
+            >;
+        };
+        three_layer {
+            bindings = <
+                // --------------------------------------------------------------
+                // |  `~  |     |     |     |     |     |     |  -_ |  =+ |      |
+                // |LSHIFT|     |     |     |     |     |     |  ;: |  '" |RSHIFT|
+                // | CTRL | WIN | ALT |     |     |     |     |  ,< |  '" |  /?  |
                 // --------------------------------------------------------------
 
                 &kp ESC &kp UP &trans &trans &trans &trans &trans &trans &trans &kp BSPC      
