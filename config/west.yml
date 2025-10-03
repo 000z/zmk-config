@@ -10,5 +10,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+      snippet: studio-rpc-usb-uart
+      cmake-args: -DCONFIG_ZMK_STUDIO=y
   self:
     path: config
