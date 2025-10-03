@@ -20,8 +20,50 @@
         display-name = "Default Layout";
         kscan = <&my_kscan>;
         transform = <&default_transform>;
+
+         // === 添加这部分：定义每个按键的物理位置 ===
+        keys = <
+            &key_pos_0_0 &key_pos_0_1 &key_pos_0_2 &key_pos_0_3 &key_pos_0_4 &key_pos_0_5 &key_pos_0_6 &key_pos_0_7 &key_pos_0_8 &key_pos_0_9
+            &key_pos_1_0 &key_pos_1_1 &key_pos_1_2 &key_pos_1_3 &key_pos_1_4 &key_pos_1_5 &key_pos_1_6 &key_pos_1_7 &key_pos_1_8 &key_pos_1_9
+            &key_pos_2_0 &key_pos_2_1 &key_pos_2_2 &key_pos_2_3 &key_pos_2_4 &key_pos_2_5 &key_pos_2_6 &key_pos_2_7 &key_pos_2_8 &key_pos_2_9
+        >;
     };
-    
+
+    // === 添加这部分：定义每个位置的具体坐标 ===
+    key_pos_0_0: key_pos_0_0 { x = <0>; y = <0>; };
+    key_pos_0_1: key_pos_0_1 { x = <19>; y = <0>; };
+    key_pos_0_2: key_pos_0_2 { x = <38>; y = <0>; };
+    key_pos_0_3: key_pos_0_3 { x = <57>; y = <0>; };
+    key_pos_0_4: key_pos_0_4 { x = <76>; y = <0>; };
+    key_pos_0_5: key_pos_0_5 { x = <95>; y = <0>; };
+    key_pos_0_6: key_pos_0_6 { x = <114>; y = <0>; };
+    key_pos_0_7: key_pos_0_7 { x = <133>; y = <0>; };
+    key_pos_0_8: key_pos_0_8 { x = <152>; y = <0>; };
+    key_pos_0_9: key_pos_0_9 { x = <171>; y = <0>; };
+
+    key_pos_1_0: key_pos_1_0 { x = <0>; y = <19>; };
+    key_pos_1_1: key_pos_1_1 { x = <19>; y = <19>; };
+    key_pos_1_2: key_pos_1_2 { x = <38>; y = <19>; };
+    key_pos_1_3: key_pos_1_3 { x = <57>; y = <19>; };
+    key_pos_1_4: key_pos_1_4 { x = <76>; y = <19>; };
+    key_pos_1_5: key_pos_1_5 { x = <95>; y = <19>; };
+    key_pos_1_6: key_pos_1_6 { x = <114>; y = <19>; };
+    key_pos_1_7: key_pos_1_7 { x = <133>; y = <19>; };
+    key_pos_1_8: key_pos_1_8 { x = <152>; y = <19>; };
+    key_pos_1_9: key_pos_1_9 { x = <171>; y = <19>; };
+
+    key_pos_2_0: key_pos_2_0 { x = <0>; y = <38>; };
+    key_pos_2_1: key_pos_2_1 { x = <19>; y = <38>; };
+    key_pos_2_2: key_pos_2_2 { x = <38>; y = <38>; };
+    key_pos_2_3: key_pos_2_3 { x = <57>; y = <38>; };
+    key_pos_2_4: key_pos_2_4 { x = <76>; y = <38>; };
+    key_pos_2_5: key_pos_2_5 { x = <95>; y = <38>; };
+    key_pos_2_6: key_pos_2_6 { x = <114>; y = <38>; };
+    key_pos_2_7: key_pos_2_7 { x = <133>; y = <38>; };
+    key_pos_2_8: key_pos_2_8 { x = <152>; y = <38>; };
+    key_pos_2_9: key_pos_2_9 { x = <171>; y = <38>; };
+
+
     my_kscan: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
