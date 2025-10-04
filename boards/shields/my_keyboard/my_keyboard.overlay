@@ -1,20 +1,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "my_keyboard.dtsi"
 
-/ {
-    chosen {
+#   {
+#   chosen {
 #        zmk,kscan = &my_kscan;
-        zmk,physical-layout = &physical_layout0;
-    };
+#       zmk,physical-layout = &physical_layout0;
+#   };
 
-    leds {
-        compatible = "gpio-leds";
-        blue_led: led_0 {
-            gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
-            label = "Blue LED";
-            status = "disabled";
-        };
-    };
 
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
