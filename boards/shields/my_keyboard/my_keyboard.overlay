@@ -15,11 +15,52 @@
         };
     };
 
+    // 首先定义键位节点 - 为30个键（10列×3行）
+    kp_0_0: key_position_0_0 { row = <0>; column = <0>; };
+    kp_0_1: key_position_0_1 { row = <0>; column = <1>; };
+    kp_0_2: key_position_0_2 { row = <0>; column = <2>; };
+    kp_0_3: key_position_0_3 { row = <0>; column = <3>; };
+    kp_0_4: key_position_0_4 { row = <0>; column = <4>; };
+    kp_0_5: key_position_0_5 { row = <0>; column = <5>; };
+    kp_0_6: key_position_0_6 { row = <0>; column = <6>; };
+    kp_0_7: key_position_0_7 { row = <0>; column = <7>; };
+    kp_0_8: key_position_0_8 { row = <0>; column = <8>; };
+    kp_0_9: key_position_0_9 { row = <0>; column = <9>; };
+
+    kp_1_0: key_position_1_0 { row = <1>; column = <0>; };
+    kp_1_1: key_position_1_1 { row = <1>; column = <1>; };
+    kp_1_2: key_position_1_2 { row = <1>; column = <2>; };
+    kp_1_3: key_position_1_3 { row = <1>; column = <3>; };
+    kp_1_4: key_position_1_4 { row = <1>; column = <4>; };
+    kp_1_5: key_position_1_5 { row = <1>; column = <5>; };
+    kp_1_6: key_position_1_6 { row = <1>; column = <6>; };
+    kp_1_7: key_position_1_7 { row = <1>; column = <7>; };
+    kp_1_8: key_position_1_8 { row = <1>; column = <8>; };
+    kp_1_9: key_position_1_9 { row = <1>; column = <9>; };
+
+    kp_2_0: key_position_2_0 { row = <2>; column = <0>; };
+    kp_2_1: key_position_2_1 { row = <2>; column = <1>; };
+    kp_2_2: key_position_2_2 { row = <2>; column = <2>; };
+    kp_2_3: key_position_2_3 { row = <2>; column = <3>; };
+    kp_2_4: key_position_2_4 { row = <2>; column = <4>; };
+    kp_2_5: key_position_2_5 { row = <2>; column = <5>; };
+    kp_2_6: key_position_2_6 { row = <2>; column = <6>; };
+    kp_2_7: key_position_2_7 { row = <2>; column = <7>; };
+    kp_2_8: key_position_2_8 { row = <2>; column = <8>; };
+    kp_2_9: key_position_2_9 { row = <2>; column = <9>; };
+
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         kscan = <&my_kscan>;
         transform = <&default_transform>;
+        
+        // 添加 keys 属性 - 这是 ZMK Studio 要求的
+        keys = <
+            &kp_0_0 &kp_0_1 &kp_0_2 &kp_0_3 &kp_0_4 &kp_0_5 &kp_0_6 &kp_0_7 &kp_0_8 &kp_0_9
+            &kp_1_0 &kp_1_1 &kp_1_2 &kp_1_3 &kp_1_4 &kp_1_5 &kp_1_6 &kp_1_7 &kp_1_8 &kp_1_9
+            &kp_2_0 &kp_2_1 &kp_2_2 &kp_2_3 &kp_2_4 &kp_2_5 &kp_2_6 &kp_2_7 &kp_2_8 &kp_2_9
+        >;
     };
     
     my_kscan: kscan0 {
@@ -27,12 +68,12 @@
         diode-direction = "col2row";
         wakeup-source;
 
-        // 修正后的行GPIO配置
+        // 行GPIO配置
         row-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                     <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                     <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
                    
-        // 修正后的列GPIO配置
+        // 列GPIO配置
         col-gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>,
                     <&gpio0 11 GPIO_ACTIVE_HIGH>,
                     <&gpio0 24 GPIO_ACTIVE_HIGH>,
