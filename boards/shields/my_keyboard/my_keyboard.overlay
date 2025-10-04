@@ -3,7 +3,7 @@
 
 / {
     chosen {
-        zmk,kscan = &my_kscan;
+#        zmk,kscan = &my_kscan;
         zmk,physical-layout = &physical_layout0;
     };
 
