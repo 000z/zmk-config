@@ -1,11 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "my_keyboard.dtsi"
 
-#   {
-#   chosen {
-#        zmk,kscan = &my_kscan;
-#       zmk,physical-layout = &physical_layout0;
-#   };
+   {
+   chosen {
+        zmk,kscan = &my_kscan;
+       zmk,physical-layout = &physical_layout0;
+   };
 
 
     physical_layout0: physical_layout_0 {
